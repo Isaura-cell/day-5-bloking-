@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Isaura</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: #111;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4facfe;
+}
+
+.logo {
+    color: white;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero span {
+    color: yellow;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+/* Section */
+section {
+    padding: 70px 50px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #4facfe;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul {
+        display: none;
+    }
+    .hero {
+        height: 80vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Isaura</h2>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Halo, Saya <span>Isaura</span></h1>
+        <p>Web Developer | UI Designer | Freelancer</p>
+        <a href="#contact" class="btn">Hubungi Saya</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang web developer yang berfokus pada pembuatan website modern, responsif, dan user-friendly.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">UI/UX</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Proyek Saya</h2>
+    <div class="project-container">
+        <div class="project-card">
+            <h3>Website Company Profile</h3>
+            <p>Website bisnis modern dan profesional.</p>
+        </div>
+        <div class="project-card">
+            <h3>Landing Page Produk</h3>
+            <p>Landing page responsif dengan desain menarik.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontak</h2>
+    <p>Email: emailanda@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Isaura. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
